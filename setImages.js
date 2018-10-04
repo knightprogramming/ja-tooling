@@ -3,8 +3,8 @@ var fs = require('fs');
 
 var WooCommerce = new WooCommerceAPI({
   url: 'https://shop.jakesarchery.com',
-  consumerKey: 'ck_a536a3be25584e9b6d219f59c8fd9b323329b72d',
-  consumerSecret: 'cs_105d4271b394f4751681ea4edb87613d251fcafe',
+  consumerKey: 'process.env.CONSUMER_KEYU',
+  consumerSecret: 'process.env.CONSUMER_SECRET',
   wpAPI: true,
   version: 'wc/v2',
   queryStringAuth: true // Force Basic Authentication as query string true and using under HTTPS
