@@ -16,7 +16,7 @@ const config = {
 
 module.exports = async () => {
     try {
-        const query = `SELECT a.ITEMNMBR,a.ITEMDESC,a.ITEMCODE,a.SELNGUOM,a.STNDCOST,a.MINSHELF1,b.BINNMBR,b.QTYONHND,b.ATYALLOC,b.PRIMVNDR,c.PRCLEVEL,c.UOMPRICE,c.PRCLEVEL
+        const query = `SELECT a.ITEMNMBR,a.ITEMCODE,a.SELNGUOM,a.STNDCOST,a.MINSHELF1,b.QTYONHND,b.ATYALLOC,b.PRIMVNDR,c.PRCLEVEL,c.UOMPRICE
                         FROM IV00101 a
                             INNER JOIN IV00102 b
                                 ON a.ITEMNMBR = b.ITEMNMBR
