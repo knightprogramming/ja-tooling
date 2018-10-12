@@ -1,0 +1,24 @@
+{
+  "name": "ja-tooling",
+  "version": "1.0.0",
+  "description": "Tooling for jakes arechery website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knightprogramming/ja-tooling.git"
+  },
+  "author": "Jake knight",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/knightprogramming/ja-tooling/issues"
+  },
+  "homepage": "https://github.com/knightprogramming/ja-tooling#readme",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "mssql": "^4.2.1",
+    "woocommerce-api": "^1.4.2"
+  }
+}

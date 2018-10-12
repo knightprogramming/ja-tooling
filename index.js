@@ -1,9 +1,12 @@
 require('dotenv').config();
 const wp =  require('./wpInteractions');
+const fs = require('fs');
 
 (async () => {
-    let wpInventory = wp.getProduct(11036);
-    const product = await wpInventory;
-    const gpProduct = 
-    product.reduce();
+    // const product = await  wp.getInventory();
+    const gpProduct = await require('./gpInteractions')();
+
+    // fs.writeFileSync(`wcInventory${new Date().getUTCHours()}.json`,JSON.stringify(product));
+    fs.writeFileSync(`gpInventory${new Date().getUTCHours()}.json`,JSON.stringify(gpProduct, null, '\t'));
+    
 }) ();

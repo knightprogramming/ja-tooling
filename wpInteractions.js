@@ -19,7 +19,11 @@ module.exports = {
     for (page = 1; page <= 50; page++) {
       promises.push(new Promise((resolve, reject) => { WooCommerce.get(`products?page=${page}&per_page=100`, (err, data, res) => {
         if (err) reject(err);
-        resolve(JSON.parse(res));
+        try{
+          resolve(JSON.parse(res));
+        } catch(e) {
+          reject(e);
+        }
       });
     }));
     }
